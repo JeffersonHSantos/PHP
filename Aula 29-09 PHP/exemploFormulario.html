@@ -1,0 +1,49 @@
+<!DOCTYPE html>        
+<html lang="en">
+<meta charset="utf-8"/>
+
+<head>
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h3> Biblioteca - Formulário de Empréstimo </h3> <br />
+
+    <form action="validaForm.php" method="post" name="f1">
+        Informe o nome: <input name="caixa1" type="text" size="20"/>       <br />  <br />
+
+        <label for="cidades">Sua cidade:</label>
+        <select name="cidades" id="cid">
+          <option value="sel">Selecione</option>
+          <option value="Passo Fundo">Passo Fundo</option>
+          <option value="Carazinho">Carazinho</option>
+          <option value="Soledade">Soledade</option>
+          <option value="Outra">Outra</option>
+        </select>  
+        <br />  <br />
+
+        <label>Usuário:</label> 
+        <INPUT TYPE="radio" NAME="user" VALUE="Alu" CHECKED>Aluno
+        <INPUT TYPE="radio" NAME="user" VALUE="Prof">Professor
+        <INPUT TYPE="radio" NAME="user" VALUE="Com">Comunidade
+        </br></br>
+
+        
+        <label>Escolha o formato de leitura de sua preferência:</label><br />
+        <input type=checkbox name="opc[]" value="I">Impressa<br />
+        <input type=checkbox name="opc[]" value="E">E-book<br />
+        <input type=checkbox name="opc[]" value="A">Aúdio book<br />
+        <input type=checkbox name="opc[]" value="T">Todos<br />
+        <br />
+         
+        </label>Quais livros deseja comprar?</label>       <br />
+        <h5>Obs: segure "CTRL" para selecionar mais de um.</h5>       <br />
+         <select name="livros[]" multiple>
+          <option value="bíblia">Bíblia do PHP</option>
+          <option value="Profssional">PHP Professional</option>
+          <option value="Iniciantes">Iniciando em PHP</option>
+          <option value="w3s">W3Schools </option>
+         </select>        <br />  <br />
+         <input  type="reset" value="Cancelar" />   <input  type="submit" value="Enviar" />   
+     </form>
+</body>
+</html> 

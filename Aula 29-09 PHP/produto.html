@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<HTML>
+<meta charset="utf-8"/>
+<BODY>
+   <h1><font color="#0000FF">Cadastro de Dados</font></h1>  
+   <h2><a href="home.html">HOME</a></h2>
+   <h3><a href="produtoSelect.php">LISTAR PRODUTOS</a></h3>
+   <h3><a href="pedido.php">LISTAR PEDIDOS</a></h3>
+    <form action="produto.php" method="post">
+      
+   <b> Código do Produto:</b>       <input type="text" name="cod" size="5">
+   <br /><br />
+   <b> Nome do Produto:</b>       <input type="text" name="nome" size="30">
+   <br /><br />
+   <b> Valor:</b>       <input type="text" name="valor" size="10">
+   <br /><br />
+   <b> Tipo do Produto:</b>
+    <INPUT TYPE="radio" NAME="per" VALUE="Perecivel" CHECKED>Perecível
+    <INPUT TYPE="radio" NAME="per" VALUE="Não-perecível">Não-perecível
+    <br /><br />
+   <input type="reset" value="Limpar">   <input type="submit" value="Cadastrar">
+   </form>
+   
+</BODY>
+</HTML>
