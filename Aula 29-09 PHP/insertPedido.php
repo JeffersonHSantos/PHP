@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css">
+
 <?php   
     $codPed =      $_POST  ["cod"];
     $dataPed =     $_POST  ["data"];
@@ -23,5 +25,5 @@
     mysqli_close($conexao);
 ?>
 
-<h3><a href="produtoSelect.php">LISTAR PRODUTOS</a></h3>
+<h3><a href="pedidoSelect.php">LISTAR PEDIDOS</a></h3>
 <h3><a href="pedido.php">CONTINUAR CADASTRANDO PEDIDO</a></h3>

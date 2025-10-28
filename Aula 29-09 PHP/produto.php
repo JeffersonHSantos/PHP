@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css">
+
 <?php   
     $codProd =      $_POST  ["cod"];
     $nomeProd =     $_POST  ["nome"];

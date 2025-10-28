@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <HTML>
 <meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css">
+
 <BODY>
    <?php
    $get1 = filter_input(INPUT_GET,"var-cod");

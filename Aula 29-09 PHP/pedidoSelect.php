@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <HTML>
-<meta charset="utf-8" />
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css">
 
 <BODY>
   <h3>
@@ -9,6 +10,9 @@
 
 
   <table border="1">
+    <h2><a href="home.html">HOME</a></h2> 
+    <h4><a href="pedido.php">CADASTRAR NOVO PEDIDO</a></h4>
+
     <tr>
       <td><b>Numero</b></td>
       <td><b>Data</b></td>
@@ -16,6 +20,7 @@
       <td><b>Vendedor</b></td>
       <td><b>Excluir</b></td>
       <td><b>Editar</b></td>
+      <td><b>Itens do Pedido</b></td>
     </tr>
 
     <?php
@@ -42,6 +47,7 @@
 
         <td><a href="<?php echo "pedidoDelete.php?var_num=" . $i['numero'] . "&tabela=pedido" ?>">Excluir</a></td>
         <td><a href="<?php echo "pedidoFormEditar.php?var_num=" . $i['numero'] . "&var_data=" . $i['data'] . "&var_valor=" . $i['valor'] . "&var_vend=" . $i['codVendedor'] ?>">Alterar</a></td>
+        <td><a href="<?php echo "itensSelect.php?var_num=" . $i['numero'] . "&tabela=itens"?>"> Itens do Pedido</a></td>
 
       </tr>
       <?php
@@ -49,7 +55,7 @@
     ?>
   </table>
 
-  <h4><a href="pedido.php">Cadastrar novo PEDIDO</a></h4>
+  
 
   <?php
   // encerra conexão

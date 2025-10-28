@@ -1,3 +1,4 @@
+
 <?php
 // cria conexão
 $conexao = mysqli_connect("localhost", "root", "", "baseTeste");

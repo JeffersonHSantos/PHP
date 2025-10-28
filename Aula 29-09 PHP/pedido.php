@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <HTML>
 <meta charset="utf-8" />
+<link rel="stylesheet" href="style.css">
 
 <BODY>
     <h3>
@@ -8,7 +9,7 @@
     </h3>
     <h2><a href="home.html">HOME</a></h2>
     <h3><a href="produtoSelect.php">LISTAR PRODUTOS</a></h3>
-    <h3><a href="pedido.php">LISTAR PEDIDOS</a></h3>
+    <h3><a href="pedidoSelect.php">LISTAR PEDIDOS</a></h3>
     <h3><a href="produto.html">CADASTRAR NOVO PRODUTO</a></h3>
     <form action="insertPedido.php" method="post">
         <b> Código:</b> <input type="text" name="cod" size="3">
