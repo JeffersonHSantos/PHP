@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<HTML>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../css/style.css">
+
+<BODY>
+   <h3>
+      <font color="#0000FF">Cadastro de Categorias</font>
+   </h3> <br />
+      <form action="../insert/insert.php" method="post">
+
+      <input type="hidden" name="tabela" value="categoria">
+
+
+      <b> ID da categoria:</b> <input type="text" name="id_categoria" size="5" >
+      <br /><br />
+      <b>Nome:</b> <input type="text" name="nome" size="30" placeholder="Ex: Romance">
+      <br><br>
+      <b> Descrição:</b> <input type="text" name="descricao" size="300">
+     
+
+      
+      <input type="reset" value="Limpar"> <input type="submit" value="Cadastrar">
+      <button type="button" onclick="history.back()">Voltar</button>
+   </form>
+</BODY>
+
+</HTML>

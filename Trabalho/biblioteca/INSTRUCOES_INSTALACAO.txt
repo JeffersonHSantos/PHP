@@ -1,0 +1,105 @@
+===============================================================================
+   SISTEMA DE GERENCIAMENTO DE BIBLIOTECA
+   Jefferson H. Santos & Eduarda S. da Silva
+===============================================================================
+
+PASSO A PASSO PARA INSTALAÇÃO E USO:
+
+1. CRIAR O BANCO DE DADOS
+   - Abra o phpMyAdmin ou MySQL Workbench
+   - Importe o arquivo "database.sql"
+   - OU execute os comandos SQL manualmente
+   - Isso criará o banco "biblioteca" com todas as tabelas e dados de teste
+
+2. CONFIGURAR CONEXÃO
+   - Abra o arquivo "conexao.php"
+   - Ajuste as seguintes linhas conforme seu ambiente:
+     
+     $host = "localhost";          // Endereço do servidor MySQL
+     $user = "root";                // Seu usuário MySQL
+     $password = "";                // Sua senha MySQL
+     $database = "biblioteca";      // Nome do banco (não alterar)
+
+3. COLOCAR OS ARQUIVOS NO SERVIDOR
+   - Copie a pasta "biblioteca" para o diretório do seu servidor web:
+     * XAMPP: C:\xampp\htdocs\
+     * WAMP: C:\wamp\www\
+     * LAMP: /var/www/html/
+
+4. INICIAR O SERVIDOR
+   - Inicie o Apache e MySQL pelo painel de controle
+   - XAMPP: Abra o XAMPP Control Panel
+   - WAMP: Abra o WAMP Manager
+
+5. ACESSAR O SISTEMA
+   - Abra seu navegador
+   - Digite: http://localhost/biblioteca/
+   - Você verá o menu principal com todos os módulos
+
+===============================================================================
+MÓDULOS DISPONÍVEIS:
+===============================================================================
+
+✅ AUTORES         - Cadastro de autores (nome, datas)
+✅ CATEGORIAS      - Categorias de livros (Romance, Terror, etc)
+✅ CLIENTES        - Cadastro de clientes (CPF, endereço, contato)
+✅ FILIAIS         - Filiais da biblioteca (CNPJ, localização)
+✅ LIVROS          - Cadastro de livros (título, ano, situação)
+✅ AUTOR-LIVRO     - Relação entre autores e livros (participação)
+✅ EMPRÉSTIMOS     - Registro de livros emprestados aos clientes
+
+===============================================================================
+OPERAÇÕES IMPLEMENTADAS EM CADA MÓDULO:
+===============================================================================
+
+📝 INSERIR   - Cadastrar novos registros
+📋 LISTAR    - Visualizar todos os registros em tabela
+✏️  EDITAR    - Modificar registros existentes
+🗑️  REMOVER   - Excluir registros (com confirmação)
+
+===============================================================================
+OBSERVAÇÕES IMPORTANTES:
+===============================================================================
+
+• O sistema já vem com dados de teste pré-carregados
+• Use os dados de teste para testar todas as funcionalidades
+• Todas as operações são funcionais e testadas
+• As foreign keys são respeitadas nos relacionamentos
+• Confirmação de exclusão evita remoções acidentais
+
+===============================================================================
+ESTRUTURA DE ARQUIVOS:
+===============================================================================
+
+index.html              - Página inicial com menu
+conexao.php             - Conexão com banco de dados
+database.sql            - Script de criação do banco
+
+autor.php               - CRUD Autores
+categoria.php           - CRUD Categorias  
+cliente.php             - CRUD Clientes
+filial.php              - CRUD Filiais
+livro.php               - CRUD Livros
+autorlivro.php          - CRUD Autor-Livro
+clientelivro.php        - CRUD Empréstimos
+
+===============================================================================
+REQUISITOS:
+===============================================================================
+
+✓ PHP 7.0 ou superior
+✓ MySQL 5.7 ou superior / MariaDB
+✓ Servidor web (Apache recomendado)
+✓ Extensão MySQLi habilitada
+
+===============================================================================
+SUPORTE:
+===============================================================================
+
+Em caso de dúvidas:
+- Verifique se o MySQL está rodando
+- Verifique as credenciais em conexao.php
+- Certifique-se de que a extensão MySQLi está ativa
+- Verifique se o banco foi criado corretamente
+
+===============================================================================

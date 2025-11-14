@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<HTML>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../css/style.css">
+
+<BODY>
+   <h3>
+      <font color="#0000FF">Cadastro de Autor</font>
+   </h3> <br />
+      <form action="../insert/insert.php" method="post">
+
+      <input type="hidden" name="tabela" value="autor">
+
+
+      <b> ID do Autor:</b> <input type="text" name="id_autor" size="5" >
+      <br /><br />
+      <b>Nome:</b> <input type="text" name="nome" size="30" placeholder="Ex: Don Quixote">
+      <br><br>
+      <b> Data de Nascimento:</b> <input type="date" name="data_nasc" size="10">
+      <br /><br />
+      <b> Data da morte:</b> <input type="date" name="data_mort" size="10">
+      <br /><br />
+
+      
+      <input type="reset" value="Limpar"> <input type="submit" value="Cadastrar">
+      <button type="button" onclick="history.back()">Voltar</button>
+   </form>
+</BODY>
+
+</HTML>

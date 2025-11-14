@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<HTML>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../css/style.css">
+
+<script>
+    function mascaraTelefone(tel) {
+        tel.value = tel.value
+            .replace(/\D/g, "")                      // Remove tudo que não é número
+            .replace(/(\d{2})(\d)/, "($1) $2")       // Coloca parênteses nos 2 primeiros díeitos
+            .replace(/(\d{1})(\d{4})(\d{4})$/, "$1 $2-$3"); // Formato 9 1234-5678
+    }
+</script>
+
+<BODY>
+    <h3>
+        <font color="#0000FF">Cadastro de Clientes</font>
+    </h3> <br />
+    <form action="../insert/insert.php" method="post">
+
+        <input type="hidden" name="tabela" value="cliente">
+
+
+        <b> CPF:</b> <input type="text" name="cpf" size="5">
+        <br /><br />
+        <b>Nome:</b> <input type="text" name="nome" size="30">
+        <br><br>
+        <b> Data de Nascimento:</b> <input type="date" name="data_nasc" size="10">
+        <br /><br />
+        <b>Endereço:</b> <input type="text" name="nome" size="30" placeholder="Ex: Vila dos Sapos, 345">
+        <br><br>
+        <b>Telefone</b>
+        <input type="text" id="telefone" name="telefone" size="30" placeholder="(54) 9 3527-1234" maxlength="16"
+            oninput="mascaraTelefone(this)">
+        <br><br>
+
+
+        <input type="reset" value="Limpar"> <input type="submit" value="Cadastrar">
+        <button type="button" onclick="history.back()">Voltar</button>
+    </form>
+</BODY>
+
+</HTML>

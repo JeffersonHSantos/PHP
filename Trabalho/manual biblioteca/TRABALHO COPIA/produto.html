@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<HTML>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css">
+
+<BODY>
+   <h3>
+      <font color="#0000FF">Cadastro de Dados</font>
+   </h3> <br />
+      <form action="insert.php" method="post">
+
+      <input type="hidden" name="tabela" value="produto">
+
+
+      <b> Código do Produto:</b> <input type="text" name="cod" size="5">
+      <br /><br />
+      <b> Nome do Produto:</b> <input type="text" name="nome" size="30">
+      <br /><br />
+      <b> Valor:</b> <input type="text" name="valor" size="10">
+      <br /><br />
+      <b> Tipo do Produto:</b>
+      <INPUT TYPE="radio" NAME="per" VALUE="Perecivel" CHECKED>Perecível
+      <INPUT TYPE="radio" NAME="per" VALUE="Não-perecível">Não-perecível
+      <br /><br />
+      <input type="reset" value="Limpar"> <input type="submit" value="Cadastrar">
+   </form>
+</BODY>
+
+</HTML>

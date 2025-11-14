@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<HTML>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../css/style.css">
+
+<BODY>
+   <h3>
+      <font color="#0000FF">Cadastro de livro</font>
+   </h3> <br />
+      <form action="../insert/insert.php" method="post">
+
+      <input type="hidden" name="tabela" value="livro">
+
+
+      <b> ID do Produto:</b> <input type="text" name="id_livro" size="5" >
+      <br /><br />
+      <b>Título:</b> <input type="text" name="titulo" size="30" placeholder="Ex: O Pequeno Príncipe">
+      <br><br>
+
+      <b> Ano de publicação:</b> <input type="number" name="ano_publicacao" size="10" placeholder="Ex: 1990">
+      <br /><br />
+      <input type="reset" value="Limpar"> <input type="submit" value="Cadastrar">
+      <button type="button" onclick="history.back()">Voltar</button>
+   </form>
+</BODY>
+
+</HTML>
